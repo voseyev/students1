@@ -1,0 +1,10 @@
+<h1>View Student</h1>
+
+
+<p>{{@student['first']}} {{ @student['last'] }}</p>
+<p>SID: {{ @student['sid'] }}</p>
+<p>GPA: {{ @student['gpa'] }}</p>
+<p>
+    <check if="{{@student['gpa'] }} >= 2.0 ">Passing</check>
+    <check if="{{@student['gpa'] }} < 2.0 ">Failing</check>
+</p>
